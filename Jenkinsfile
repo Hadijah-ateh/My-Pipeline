@@ -22,5 +22,11 @@ pipeline{
                 sh 'mvn test'
             }
         }
+        stage("Contious Biuld"){
+
+            steps{
+                sh 'mvn clean install'
+            }
+        }
     }
 }
